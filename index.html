@@ -5,20 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.9/css/bootstrap-dialog.css" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One|Roboto">
   <link rel="stylesheet" href="css/main.css">
-
   <title>Logo Search</title>
 </head>
 
 <body>
   <header>
     <!-- title here -->
-    <h1>Bootcamps Programs</h1>
+    <h1>Bootcamp Programs</h1>
   </header>
 
   <nav>
@@ -28,60 +24,39 @@
     <div class="row nav-container">
 
       <div class="btn-group">
-        <button type="button" class="btn btn-danger">ONLINE / IN PERSON</button>
+        <button type="button" class="btn btn-danger" id="online-immersive-opt">ONLINE / IMMERSIVE</button>
         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="caret"></span>
           <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <ul class="dropdown-menu">
-          <li><a href="#">SEARCH ALL</a></li>
+        <ul class="dropdown-menu online-dropdown">
+
           <li><a href="#">ONLINE</a></li>
-          <li><a href="#">IN PERSON</a></li>
+          <li><a href="#">IMMERSIVE</a></li>
         </ul>
       </div>
 
-      <!-- <div class="btn-group">
-        <button type="button" class="btn btn-danger">CAREER TRACK</button>
+      <div class="btn-group ">
+        <button type="button" class="btn btn-danger" id="guarantees-job-opt">GUARANTEES JOB</button>
         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="caret"></span>
           <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <ul class="dropdown-menu">
-          <li><a href="#">SEARCH ALL</a></li>
-          <li><a href="#">FULL STACK WEB DEVELOPMENT</a></li>
-          <li><a href="#">Coding Bootcamp</a></li>
-          <li><a href="#">Flexible Web Development Bootcamp</a></li>
-          <li><a href="#">Software Developer Track</a></li>
-          <li><a href="#">Web Design Blueprint</a></li>
-          <li><a href="#">UX/UI Design</a></li>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Hack Reactor</a></li>
-          <li><a href="#">Data Science </a></li>
-          <li><a href="#">web development</a></li>
-        </ul>
-      </div> -->
+        <ul class="dropdown-menu guarantees-dropdown">
 
-      <div class="btn-group">
-        <button type="button" class="btn btn-danger">GUARANTEES JOB</button>
-        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="caret"></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="#">SEARCH ALL</a></li>
           <li><a href="#">YES</a></li>
           <li><a href="#">NO</a></li>
         </ul>
       </div>
 
-      <div class="btn-group">
-        <button type="button" class="btn btn-danger">JOB ASSISTANCE</button>
+      <div class="btn-group ">
+        <button type="button" class="btn btn-danger" id="job-assistance-opt">JOB ASSISTANCE</button>
         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="caret"></span>
           <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <ul class="dropdown-menu">
-          <li><a href="#">SEARCH ALL</a></li>
+        <ul class="dropdown-menu assistance-dropdown">
+
           <li><a href="#">YES</a></li>
           <li><a href="#">NO</a></li>
         </ul>
@@ -98,37 +73,35 @@
   <section>
     <!-- logo here -->
     <div class="row">
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/bloc-logo-square-500x500-white.png" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/cd-logo-blue-600x600.png" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/dbc-t-profile-400x400px.jpg" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/dev-mountain-logo.png" alt="" width="200" height="200"></a></div>
+      <div class="col-sm-3"><a href="https://www.bloc.io/" target="_blank" data-toggle="tooltip" data-placement="top" title="Bloc"><img class="filterImg jobAssistance guaranteesJob immersiveProg onlineProg" src="img/bloc-logo-square-500x500-white.png" alt="Bloc" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="http://www.codingdojo.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Coding Dojo"><img class="filterImg jobAssistance immersiveProg onlineProg" src="img/cd-logo-blue-600x600.png" alt="Coding Dojo" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="https://devbootcamp.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Dev Bootcamp"><img class="filterImg jobAssistance onlineProg" src="img/dbc-t-profile-400x400px.jpg" alt="Dev Bootcamp" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="https://devmountain.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="DevMountain"><img class="filterImg jobAssistance immersiveProg" src="img/dev-mountain-logo.png" alt="DevMountain" width="150" height="150"></a></div>
     </div>
     <div class="row">
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/flatironschool.png" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/general-assembly-logo.jpg" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/ironhacklogo-compressor-20-1-.png" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/LaunchAcademy-white-pink-logo.png" alt="" width="200" height="200"></a></div>
+      <div class="col-sm-3"><a href="https://flatironschool.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Flatiron School"><img class="filterImg jobAssistance guaranteesJob immersiveProg onlineProg" src="img/flatironschool.png" alt="Flatiron School" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="https://generalassemb.ly/" target="_blank" data-toggle="tooltip" data-placement="top" title="General Assembly"><img class="filterImg jobAssistance immersiveProg " src="img/general-assembly-logo.jpg" alt="General Assembly" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="https://www.ironhack.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Ironhack"><img class="filterImg jobAssistance onlineProg" src="img/ironhacklogo-compressor-20-1-.png" alt="Ironhack" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="https://www.launchacademy.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Launch Academy"><img class="filterImg jobAssistance immersiveProg" src="img/LaunchAcademy-white-pink-logo.png" alt="Launch Academy" width="150" height="150"></a></div>
     </div>
     <div class="row">
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/logo-2.jpg" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/logo-graybg-02.png" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/make-school-600x600.jpg" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/skillcrush-20logo.png" alt="" width="200" height="200"></a></div>
+      <div class="col-sm-3"><a href="https://learncodinganywhere.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="The Tech Academy"><img class="filterImg jobAssistance onlineProg" src="img/logo-2.jpg" alt="The Tech Academy" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="http://www.hackreactor.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Hack Reactor"><img class="filterImg jobAssistance immersiveProg" src="img/logo-graybg-02.png" alt="Hack Reactor" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="https://www.makeschool.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Make School"><img class="filterImg jobAssistance immersiveProg " src="img/make-school-600x600.jpg" alt="Make School" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="https://skillcrush.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Skillcrush"><img class="filterImg onlineProg" src="img/skillcrush-20logo.png" alt="Skillcrush" width="150" height="150"></a></div>
     </div>
     <div class="row">
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/startup-institute-logo-arrow.png" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/thinkful-logo.png" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/le-wagon-logo.png" alt="" width="200" height="200"></a></div>
-      <div class="col-sm-3"><a href="#"><img class="filterImg jobAssistance guaranteesJob onlineProg inPersonProg" src="img/logo-emblem-red-1000-1-.jpg" alt="" width="200" height="200"></a></div>
+      <div class="col-sm-3"><a href="https://www.startupinstitute.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Startup Institute"><img class="filterImg jobAssistance immersiveProg " src="img/startup-institute-logo-arrow.png" alt="Startup Institute" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="https://www.thinkful.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Thinkful"><img class="filterImg jobAssistance guaranteesJob immersiveProg onlineProg" src="img/thinkful-logo.png" alt="Thinkful" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="https://www.lewagon.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Le Wagon"><img class="filterImg onlineProg" src="img/le-wagon-logo.png" alt="Le Wagon" width="150" height="150"></a></div>
+      <div class="col-sm-3"><a href="https://www.appacademy.io/" target="_blank" data-toggle="tooltip" data-placement="top" title="App Academy"><img class="filterImg jobAssistance guaranteesJob  onlineProg" src="img/logo-emblem-red-1000-1-.jpg" alt="App Academy" width="150" height="150"></a></div>
     </div>
   </section>
 
 
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.9/js/bootstrap-dialog.js"></script>
-
-  <script src="js/app.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
 </body>
 
 </html>
