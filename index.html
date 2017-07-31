@@ -14,7 +14,7 @@
 <body>
   <header>
     <!-- title here -->
-    <h1>Bootcamp Programs</h1>
+    <h1 class="title">Bootcamp Programs</h1>
   </header>
 
   <nav>
@@ -30,22 +30,20 @@
           <span class="sr-only">Toggle Dropdown</span>
         </button>
         <ul class="dropdown-menu online-dropdown">
-
-          <li><a href="#">ONLINE</a></li>
-          <li><a href="#">IMMERSIVE</a></li>
+          <li><a href="#" data-opt-value='OP'>ONLINE</a></li>
+          <li><a href="#" data-opt-value='IP'>IMMERSIVE</a></li>
         </ul>
       </div>
 
       <div class="btn-group ">
-        <button type="button" class="btn btn-danger" id="guarantees-job-opt">GUARANTEES JOB</button>
+        <button type="button" class="btn btn-danger" id="job-guarantee-opt">JOB GUARANTEE</button>
         <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="caret"></span>
           <span class="sr-only">Toggle Dropdown</span>
         </button>
-        <ul class="dropdown-menu guarantees-dropdown">
-
-          <li><a href="#">YES</a></li>
-          <li><a href="#">NO</a></li>
+        <ul class="dropdown-menu guarantee-dropdown">
+          <li><a href="#" data-opt-value='JG'>JOB GUARANTEE: YES</a></li>
+          <li><a href="#" data-opt-value='NOJG'>JOB GUARANTEE: NO</a></li>
         </ul>
       </div>
 
@@ -56,45 +54,108 @@
           <span class="sr-only">Toggle Dropdown</span>
         </button>
         <ul class="dropdown-menu assistance-dropdown">
-
-          <li><a href="#">YES</a></li>
-          <li><a href="#">NO</a></li>
+          <li><a href="#" data-opt-value='JA'>JOB ASSISTANCE: YES</a></li>
+          <li><a href="#" data-opt-value='NOJA'>JOB ASSISTANCE: NO</a></li>
         </ul>
       </div>
-
+      <br> <br>
+      <input type="button" name="search-btn" class="btn btn-primary search-btn" value="SEARCH">
+      <br><br>
     </div>
-    <br> <br>
-    <!-- Guarantees Job = No | Job Assistance = Yes -->
-
-    <input type="button" name="search-btn" class="btn btn-primary search-btn" value="SEARCH">
-    <br><br>
   </nav>
 
   <section>
     <!-- logo here -->
-    <div class="row">
-      <div class="col-sm-3"><a href="https://www.bloc.io/" target="_blank" data-toggle="tooltip" data-placement="top" title="Bloc"><img class="filterImg jobAssistance guaranteesJob immersiveProg onlineProg" src="img/bloc-logo-square-500x500-white.png" alt="Bloc" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="http://www.codingdojo.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Coding Dojo"><img class="filterImg jobAssistance immersiveProg onlineProg" src="img/cd-logo-blue-600x600.png" alt="Coding Dojo" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="https://devbootcamp.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Dev Bootcamp"><img class="filterImg jobAssistance onlineProg" src="img/dbc-t-profile-400x400px.jpg" alt="Dev Bootcamp" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="https://devmountain.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="DevMountain"><img class="filterImg jobAssistance immersiveProg" src="img/dev-mountain-logo.png" alt="DevMountain" width="150" height="150"></a></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3"><a href="https://flatironschool.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Flatiron School"><img class="filterImg jobAssistance guaranteesJob immersiveProg onlineProg" src="img/flatironschool.png" alt="Flatiron School" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="https://generalassemb.ly/" target="_blank" data-toggle="tooltip" data-placement="top" title="General Assembly"><img class="filterImg jobAssistance immersiveProg " src="img/general-assembly-logo.jpg" alt="General Assembly" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="https://www.ironhack.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Ironhack"><img class="filterImg jobAssistance onlineProg" src="img/ironhacklogo-compressor-20-1-.png" alt="Ironhack" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="https://www.launchacademy.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Launch Academy"><img class="filterImg jobAssistance immersiveProg" src="img/LaunchAcademy-white-pink-logo.png" alt="Launch Academy" width="150" height="150"></a></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3"><a href="https://learncodinganywhere.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="The Tech Academy"><img class="filterImg jobAssistance onlineProg" src="img/logo-2.jpg" alt="The Tech Academy" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="http://www.hackreactor.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Hack Reactor"><img class="filterImg jobAssistance immersiveProg" src="img/logo-graybg-02.png" alt="Hack Reactor" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="https://www.makeschool.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Make School"><img class="filterImg jobAssistance immersiveProg " src="img/make-school-600x600.jpg" alt="Make School" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="https://skillcrush.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Skillcrush"><img class="filterImg onlineProg" src="img/skillcrush-20logo.png" alt="Skillcrush" width="150" height="150"></a></div>
-    </div>
-    <div class="row">
-      <div class="col-sm-3"><a href="https://www.startupinstitute.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Startup Institute"><img class="filterImg jobAssistance immersiveProg " src="img/startup-institute-logo-arrow.png" alt="Startup Institute" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="https://www.thinkful.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Thinkful"><img class="filterImg jobAssistance guaranteesJob immersiveProg onlineProg" src="img/thinkful-logo.png" alt="Thinkful" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="https://www.lewagon.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Le Wagon"><img class="filterImg onlineProg" src="img/le-wagon-logo.png" alt="Le Wagon" width="150" height="150"></a></div>
-      <div class="col-sm-3"><a href="https://www.appacademy.io/" target="_blank" data-toggle="tooltip" data-placement="top" title="App Academy"><img class="filterImg jobAssistance guaranteesJob  onlineProg" src="img/logo-emblem-red-1000-1-.jpg" alt="App Academy" width="150" height="150"></a></div>
+    <div class="logo-container">
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="https://devbootcamp.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Dev Bootcamp">
+            <img class="JA OP NOJG" src="img/dbc-t-profile-400x400px.jpg" alt="Dev Bootcamp" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.bloc.io/" target="_blank" data-toggle="tooltip" data-placement="top" title="Bloc">
+            <img class="JA JG IP OP" src="img/bloc-logo-square-500x500-white.jpg" alt="Bloc" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://devmountain.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="DevMountain">
+            <img class="JA IP NOJG" src="img/dev-mountain-logo.png" alt="DevMountain" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="http://www.codingdojo.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Coding Dojo">
+            <img class="JA IP OP NOJG" src="img/cd-logo-blue-600x600.png" alt="Coding Dojo" width="150" height="150">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="https://flatironschool.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Flatiron School">
+            <img class="JA JG IP OP" src="img/flatironschool.png" alt="Flatiron School" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://generalassemb.ly/" target="_blank" data-toggle="tooltip" data-placement="top" title="General Assembly">
+            <img class="JA IP NOJG" src="img/general-assembly-logo.jpg" alt="General Assembly" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.ironhack.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Ironhack">
+            <img class="JA OP NOJG" src="img/ironhacklogo-compressor-20-1-.png" alt="Ironhack" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.launchacademy.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Launch Academy">
+            <img class="JA IP NOJG" src="img/LaunchAcademy-white-pink-logo.png" alt="Launch Academy" width="150" height="150">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="https://skillcrush.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Skillcrush">
+            <img class="OP NOJG NOJA" src="img/skillcrush-20logo.png" alt="Skillcrush" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://learncodinganywhere.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="The Tech Academy">
+            <img class="JA OP NOJG" src="img/logo-2.jpg" alt="The Tech Academy" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="http://www.hackreactor.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Hack Reactor">
+            <img class="JA IP NOJG" src="img/logo-graybg-02.png" alt="Hack Reactor" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.makeschool.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Make School">
+            <img class="JA IP NOJG" src="img/make-school-600x600.jpg" alt="Make School" width="150" height="150">
+          </a>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="https://www.thinkful.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Thinkful">
+            <img class="JA JG IP OP" src="img/thinkful-logo.png" alt="Thinkful" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.startupinstitute.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Startup Institute">
+            <img class="JA IP NOJG" src="img/startup-institute-logo-arrow.png" alt="Startup Institute" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.appacademy.io/" target="_blank" data-toggle="tooltip" data-placement="top" title="App Academy">
+            <img class="JA JG OP" src="img/logo-emblem-red-1000-1-.jpg" alt="App Academy" width="150" height="150">
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.lewagon.com/" target="_blank" data-toggle="tooltip" data-placement="top" title="Le Wagon">
+            <img class="OP NOJG NOJA" src="img/le-wagon-logo.png" alt="Le Wagon" width="150" height="150">
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
