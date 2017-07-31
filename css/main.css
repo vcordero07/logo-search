@@ -26,6 +26,11 @@ body {
   text-align: center;
 }
 
+.btn-group {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
 .col-sm-3 {
   padding: 5px 15px;
 }
